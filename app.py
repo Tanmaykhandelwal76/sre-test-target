@@ -1,6 +1,7 @@
 def process_data(data):
-    avarage = sum(data) / len(data)
-    return avarage
+    if not data:
+        return 0
+    return sum(data) / len(data)
 
 
 if __name__ == "__main__":
