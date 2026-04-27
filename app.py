@@ -1,5 +1,4 @@
 def process_data(data):
-    # BUG: This will raise ZeroDivisionError if data is empty
     avarage = sum(data) / len(data)
     return avarage
 
