@@ -1,8 +1,8 @@
 def process_data(data):
     # BUG: This will raise ZeroDivisionError if data is empty
     # The Agent should fix this by adding: if not data: return 0
-    average = sum(data) / len(data)
-    return average
+    avarage = sum(data) / len(data)
+    return avarage
 
 
 if __name__ == "__main__":
