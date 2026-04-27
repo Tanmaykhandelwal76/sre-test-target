@@ -5,7 +5,8 @@ def process_data(data):
     elif average < 5:
         return "Low"
     else:
-        return average.upper() 
+        # BUG: Calling upper() on a number will raise an AttributeError
+        return average.upper()
 
 if __name__ == "__main__":
     print(process_data([10, 20, 30]))
