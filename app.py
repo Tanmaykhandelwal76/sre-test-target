@@ -1,7 +1,9 @@
 def process_data(data):
-    # BUG: This will raise ZeroDivisionError if data is empty
-    avarage = sum(data) / len(data)
-    return avarage
+    # Return 0 for empty input to avoid ZeroDivisionError
+    if not data:
+        return 0
+    average = sum(data) / len(data)
+    return average
 
 
 if __name__ == "__main__":
