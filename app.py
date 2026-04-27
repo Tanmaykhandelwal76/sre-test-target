@@ -1,6 +1,6 @@
 def process_data(data):
-    avarage = sum(data) / len(data)
-    return avarage
+    average = sum(data) // len(data)
+    return average
 
 
 if __name__ == "__main__":
